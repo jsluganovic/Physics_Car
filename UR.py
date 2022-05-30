@@ -20,9 +20,9 @@ def pulseIn(pin,level,timeOut): # function pulseIn: obtain pulse time of a pin
     pulseTime = (time.time() - t0)*1000000
     return pulseTime
     
-def getSonar():     #get the measurement results of ultrasonic module,with unit: cm
+def getSonar():     #get the measurement results of ultrasonic module, with unit: cm
     GPIO.output(trigPin,GPIO.HIGH)      #make trigPin send 10us high level 
-    time.sleep(0.00001)     #10us
+    time.sleep(0.00001)     #10us (trigger input signal)
     GPIO.output(trigPin,GPIO.LOW)
     pingTime = pulseIn(echoPin,GPIO.HIGH,timeOut)   #read plus time of echoPin
     distance = pingTime * 340.0 / 2.0 / 10000.0     # the sound speed is 340m/s, and calculate distance
