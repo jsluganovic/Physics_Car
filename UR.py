@@ -39,7 +39,21 @@ def loop():
         distance = getSonar()
         print ("The distance is : %.2f cm"%(distance))
         time.sleep(1)
-        
+
+
+
+
+def distance_out():
+    distance = getSonar()
+
+
+def distanceUR_left():
+    distance = getSonar() # adjust this to another ur sensor
+
+
+def distanceUR_right():
+    distance = getSonar() # adjust this to another ur sensor
+
 if __name__ == '__main__':     #program start from here
     setup()
     try:
