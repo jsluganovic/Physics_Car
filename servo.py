@@ -24,6 +24,7 @@ def servoWrite(angle):      # make the servo rotate to specific angle (0-180 deg
         angle = 180
     p.ChangeDutyCycle(map(angle,0,180,SERVO_MIN_DUTY,SERVO_MAX_DUTY))#map the angle to duty cycle and output it
     
+    
 def loop():
     while True:
         for dc in range(0, 181, 1):   #make servo rotate from 0 to 180 deg

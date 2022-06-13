@@ -1,0 +1,936 @@
+[32m[INFO]: Socket server start.[37m
+Connected by ('192.168.1.4', 59963)
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
+[37m[INFO]: Socket server attempting to send data.[37m
+[32m[INFO]: Socket server data sent.[37m
