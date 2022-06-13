@@ -1,4 +1,0 @@
-  File "t.py", line 1
-    print("asd)
-              ^
-SyntaxError: EOL while scanning string literal
