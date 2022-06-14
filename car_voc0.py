@@ -1,5 +1,137 @@
 # mateo 
 print("Mateo ist ein Thunfisch.")
+# fishlog init
+import sys
+import datetime
+from time import sleep
+
+class Color(object):
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    END = '\033[0m'
+    # add radients
+    RED_BOLD = '\033[1;31m'
+    GREEN_BOLD = '\033[1;32m'
+    YELLOW_BOLD = '\033[1;33m'
+    BLUE_BOLD = '\033[1;34m'
+    MAGENTA_BOLD = '\033[1;35m'
+    CYAN_BOLD = '\033[1;36m'
+    WHITE_BOLD = '\033[1;37m'
+    END_BOLD = '\033[1;0m'
+    # rainbow gradient
+    RED_RAINBOW = '\033[38;5;9m'
+    GREEN_RAINBOW = '\033[38;5;10m'
+
+
+
+class fishlog(object):
+    def __init__(self, filename="fishlog.log"):
+
+        self.terminal = sys.stdout
+        self.log = open(filename, "a")
+         # write the time the file was opened
+        time = datetime.datetime.now()
+        time = time.strftime("%Y-%m-%d %H:%M:%S")
+        time = str(time)
+        sleep(1)
+        self.log.write( "\n"+ f"[{time}] : " + "\n")
+        # print ok into the file once it opens
+        self.write(Color.GREEN_RAINBOW + """
+        
+   ___              __       ___                       
+ /'___\ __         /\ \     /\_ \                               
+/\ \__//\_\    ____\ \ \___ \//\ \     ___      __     
+\ \ ,__\/\ \  /',__\\ \  _ `\ \ \ \   / __`\  /'_ `\   
+ \ \ \_/\ \ \/\__, `\\ \ \ \ \ \_\ \_/\ \L\ \/\ \L\ \  
+  \ \_\  \ \_\/\____/ \ \_\ \_\/\____\ \____/\ \____ \ 
+   \/_/   \/_/\/___/   \/_/\/_/\/____/\/___/  \/___L\ :
+                                                /\____/
+                                                \_/__/ v. 2.0 by @Skipper_
+        """ + Color.END)
+        
+
+
+        self.write(Color.CYAN_BOLD + """
+                 _
+                 )_ `.
+                )_ `. :
+               )_ `. `|
+              )_ `.` /
+             )_ `-.` |
+            )_ `-.` ` :
+             )_.- ` `  :
+              )_.-` `   :
+               )_.-`\ /\ :
+                )_.-| \O  :
+                    |  \   :
+          _        /   /    \        _
+         ) `-._   / /O\  /O\ \   _.-` (
+        )      `-/  `-'  `-'  \-`      (
+        )     _.-|    __      |-._     (
+         )_.-`   \ .-'  `-._  /   `-._(
+                  \ `-.__.--`/
+                   `-._  _.-"
+                       ``
+""" + Color.END)
+        sleep(1)
+        self.write(Color.MAGENTA + """
+[INFO] Fishlog initialized.\n""" + Color.END)
+        sleep(1)
+        self.write(Color.YELLOW + """
+[INFO] Starting main event...\n""" + Color.END)
+        sleep(1)
+        self.write(Color.BLUE + """
+[INFO]  Main event started.\n\n\n""" + Color.END)
+                                                                
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+        
+
+    def flush(self):
+        #this flush method is needed for python 3 compatibility.
+        #this handles the flush command by doing nothing.
+        #you might want to specify some extra behavior here.
+        pass
+# create a class that logs the terminal output to a file
+class fishlog(object):
+    def __init__(self, filename="Default.log"):
+        self.terminal = sys.stdout
+        self.log = open(filename, "a")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        #this flush method is needed for python 3 compatibility.
+        #this handles the flush command by doing nothing.
+        #you might want to specify some extra behavior here.
+        pass
+
+# kira init
+print("""
+Initializing 
+      ___                       ___           ___              
+     /\__\          ___        /\  \         /\  \             
+    /:/  /         /\  \      /::\  \       /::\  \            
+   /:/__/          \:\  \    /:/\:\  \     /:/\:\  \           
+  /::\__\____      /::\__\  /::\~\:\  \   /::\~\:\  \          
+ /:/\:::::\__\  __/:/\/__/ /:/\:\ \:\__\ /:/\:\ \:\__\         
+ \/_|:|~~|~    /\/:/  /    \/_|::\/:/  / \/__\:\/:/  /         
+    |:|  |     \::/__/        |:|::/  /       \::/  /          
+    |:|  |      \:\__\        |:|\/__/        /:/  /           
+    |:|  |       \/__/        |:|  |         /:/  /            
+     \|__|                     \|__|         \/__/             
+
+
+""")
 #libs
 from colorama import Fore
 import RPi.GPIO as GPIO
@@ -102,11 +234,12 @@ def loop_left():
         # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_left) <= 20:
-            print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+            
             servoWrite(20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
             servoWrite(-20) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
+            return print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
         else:
             print("UR L:: The distance is : %.2f cm"%(distance_left))
         time.sleep(1) # maybe dont need this ():P
@@ -155,12 +288,18 @@ def setup_right():
 def loop_right():
     while(True):
         distance_right = getSonar_right()
-    #   print ("UR R:: The distance is : %.2f cm"%(distance_right))
+        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+
         if int(distance_right) <= 20:
-            print(Fore.BLUE + "Object detected RIGHT, turning LEFT" + Fore.WHITE)
+            servoWrite(-20) # rotate the servo by 20 degrees 
+            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(20) # rotate the servo back to original position 
+            #!ATTENTION: check if this works.
+            return print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
+             
         else:
-            print("[INFO] UR R:: The distance is : %.2f cm"%(distance_right))
-        time.sleep(1) # delete maybe idk ()
+            print("UR R:: The distance is : %.2f cm"%(distance_right))
+        time.sleep(1) # maybe dont need this ():P
 
 
 if __name__ == '__main__':     #program start from here
@@ -267,14 +406,20 @@ if __name__ == '__main__':
     print(Fore.MAGENTA + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
     time.sleep(2)
 
+    # fishlog initialization
+    print(Fore.MAGENTA + "[INFO] Initializing fishlog..." + Fore.WHITE)
+    sys.stdout = fishlog("fishlog_car.log")
+    print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-       # pcm_start()
-       # getSonar_left()
-       # getSonar_right()
-       # loop_left()
-       # setup_server()
-       print("start init")
+        while True:
+            setup_socket()
+            pcm_start()
+            time.sleep(1)
+            getSonar_left()
+            getSonar_right()
+            loop_left()
+            loop_right()
 
 
     except KeyboardInterrupt:

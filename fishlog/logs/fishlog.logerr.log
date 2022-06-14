@@ -1,0 +1,259 @@
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:17:44] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 74, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:19:01] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 75, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:20:42] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 76, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:21:15] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 78, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:21:39] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 77, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:23:21] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 75, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+...
+
+[2022-06-14 12:26:12] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 76, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:26:31] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 76, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:26:50] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 76, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+[INFO] Logger initialized.
+
+[2022-06-14 12:33:23] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 71, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:45:30] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 77, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+[INFO] Logger initialized.
+
+[2022-06-14 12:50:29] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 83, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+[INFO] Logger initialized.
+
+[2022-06-14 12:51:12] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 83, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:54:22] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 82, in <module>
+    print(Fore.S + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'S'
+
+[2022-06-14 12:54:53] : 
+
+[2022-06-14 12:56:32] : 
+
+[2022-06-14 12:59:47] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 82, in <module>
+    print(Fore.GREE+ "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:02:05] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 85, in <module>
+    print(Fore.GREE+ "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+[INFO] ERRR initialized.
+
+[2022-06-14 13:02:41] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 84, in <module>
+    print(Fore.GREE+ "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:03:35] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 84, in <module>
+    print(Fore.GREE+ "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:04:06] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 85, in <module>
+    print(Fore.GREE+ "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:05:30] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 85, in <module>
+    print(Fore.GREE + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:06:52] : 
+
+[2022-06-14 13:06:58] : 
+
+[2022-06-14 13:07:09] : 
+
+[2022-06-14 13:07:22] : 
+
+[2022-06-14 13:07:37] : 
+
+[2022-06-14 13:08:26] : 
+[INFO] Logger initialized.
+
+   ___              __       ___                       
+ /'___\ __         /\ \     /\_ \                      
+/\ \__//\_\    ____\ \ \___ \//\ \     ___      __     
+\ \ ,__\/\ \  /',__\ \  _ `\ \ \ \   / __`\  /'_ `\   
+ \ \ \_/\ \ \/\__, `\ \ \ \ \ \_\ \_/\ \L\ \/\ \L\ \  
+  \ \_\  \ \_\/\____/ \ \_\ \_\/\____\ \____/\ \____ \ 
+   \/_/   \/_/\/___/   \/_/\/_/\/____/\/___/  \/___L\ :
+                                                /\____/
+                                                \_/__/ v. 1.0 by @Skipper_
+
+
+
+
+[2022-06-14 13:14:54] : 
+[31m[ERROR] Exception detected, please have a look at the error log.[37mTraceback (most recent call last):
+  File "fishlog.py", line 93, in <module>
+    test()
+  File "fishlog.py", line 85, in test
+    print(Fore.GREE + "[INFO] Servo setup OK." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+[INFO] Logger initialized.
+
+   ___              __       ___                       
+ /'___\ __         /\ \     /\_ \                      
+/\ \__//\_\    ____\ \ \___ \//\ \     ___      __     
+\ \ ,__\/\ \  /',__\ \  _ `\ \ \ \   / __`\  /'_ `\   
+ \ \ \_/\ \ \/\__, `\ \ \ \ \ \_\ \_/\ \L\ \/\ \L\ \  
+  \ \_\  \ \_\/\____/ \ \_\ \_\/\____\ \____/\ \____ \ 
+   \/_/   \/_/\/___/   \/_/\/_/\/____/\/___/  \/___L\ :
+                                                /\____/
+                                                \_/__/ v. 1.0 by @Skipper_
+
+
+
+
+[2022-06-14 13:15:37] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 92, in <module>
+    test()
+  File "fishlog.py", line 84, in test
+    print(Fore.GREE + "[INFO] Servo setup OK." + Fore.WHITE)
+AttributeError: 'AnsiFore' object has no attribute 'GREE'
+
+[2022-06-14 13:17:59] : 
+
+[2022-06-14 13:18:13] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 69, in <module>
+    test()
+  File "fishlog.py", line 65, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:18:16] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 69, in <module>
+    test()
+  File "fishlog.py", line 65, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:18:29] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 69, in <module>
+    test()
+  File "fishlog.py", line 65, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:18:43] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    test()
+  File "fishlog.py", line 66, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:18:48] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    test()
+  File "fishlog.py", line 66, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:19:05] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    test()
+  File "fishlog.py", line 66, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:19:09] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 70, in <module>
+    test()
+  File "fishlog.py", line 66, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
+
+[2022-06-14 13:19:42] : 
+Traceback (most recent call last):
+  File "fishlog.py", line 68, in <module>
+    test()
+  File "fishlog.py", line 64, in test
+    print("ok", Fore.D)
+AttributeError: 'AnsiFore' object has no attribute 'D'
