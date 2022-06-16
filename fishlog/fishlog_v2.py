@@ -26,6 +26,7 @@ class Color(object):
 
 
 
+
 class Logger(object):
     def __init__(self, filename="fishlog.log"):
 
@@ -54,26 +55,12 @@ class Logger(object):
 
 
         self.write(Color.CYAN_BOLD + """
-                 _
-                 )_ `.
-                )_ `. :
-               )_ `. `|
-              )_ `.` /
-             )_ `-.` |
-            )_ `-.` ` :
-             )_.- ` `  :
-              )_.-` `   :
-               )_.-`\ /\ :
-                )_.-| \O  :
-                    |  \   :
-          _        /   /    \        _
-         ) `-._   / /O\  /O\ \   _.-` (
-        )      `-/  `-'  `-'  \-`      (
-        )     _.-|    __      |-._     (
-         )_.-`   \ .-'  `-._  /   `-._(
-                  \ `-.__.--`/
-                   `-._  _.-"
-                       ``
+                    /`·.¸
+                    /¸...¸`:·
+                ¸.·´  ¸   `·.¸.·´)
+                : © ):´;      ¸  {
+                `·.¸ `·  ¸.·´\`·¸)
+                    `\\´´\¸.·´
 """ + Color.END)
         sleep(1)
         self.write(Color.MAGENTA + """

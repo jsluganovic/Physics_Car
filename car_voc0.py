@@ -14,7 +14,7 @@ class Color(object):
     CYAN = '\033[96m'
     WHITE = '\033[97m'
     END = '\033[0m'
-    # add radients
+    # add bold variants
     RED_BOLD = '\033[1;31m'
     GREEN_BOLD = '\033[1;32m'
     YELLOW_BOLD = '\033[1;33m'
@@ -26,6 +26,9 @@ class Color(object):
     # rainbow gradient
     RED_RAINBOW = '\033[38;5;9m'
     GREEN_RAINBOW = '\033[38;5;10m'
+    # gradient between pink and blue
+    PINK_BLUE = '\033[38;5;13m'
+
 
 
 
@@ -57,26 +60,13 @@ class fishlog(object):
 
 
         self.write(Color.CYAN_BOLD + """
-                 _
-                 )_ `.
-                )_ `. :
-               )_ `. `|
-              )_ `.` /
-             )_ `-.` |
-            )_ `-.` ` :
-             )_.- ` `  :
-              )_.-` `   :
-               )_.-`\ /\ :
-                )_.-| \O  :
-                    |  \   :
-          _        /   /    \        _
-         ) `-._   / /O\  /O\ \   _.-` (
-        )      `-/  `-'  `-'  \-`      (
-        )     _.-|    __      |-._     (
-         )_.-`   \ .-'  `-._  /   `-._(
-                  \ `-.__.--`/
-                   `-._  _.-"
-                       ``
+                    /`·.¸
+                    /¸...¸`:·
+                ¸.·´  ¸   `·.¸.·´)
+                : © ):´;      ¸  {
+                `·.¸ `·  ¸.·´\`·¸)
+                    `\\´´\¸.·´
+
 """ + Color.END)
         sleep(1)
         self.write(Color.MAGENTA + """
@@ -116,7 +106,7 @@ class fishlog(object):
         pass
 
 # kira init
-print("""
+print(Color.RED_BOLD + """
 Initializing 
       ___                       ___           ___              
      /\__\          ___        /\  \         /\  \             
@@ -131,12 +121,11 @@ Initializing
      \|__|                     \|__|         \/__/             
 
 
-""")
+""" + Color.END)
 #libs
 from colorama import Fore
 import RPi.GPIO as GPIO
 import time 
-import logging 
 import socket
 import sys
 #----------------------------------------------------------------
@@ -155,7 +144,7 @@ def map(value, fromLow, fromHigh, toLow, toHigh):
 
 def setup_servo():
     global p
-    GPIO.setmode(GPIO.BOARD)       # Numbers GPIOs by physical location
+    GPIO.setmode(GPIO.BOARD)         # Numbers GPIOs by physical location
     GPIO.setup(servoPin, GPIO.OUT)   # Set servoPin's mode to: is output
     GPIO.output(servoPin, GPIO.LOW)  # Set servoPin to low
 
@@ -350,7 +339,7 @@ def pcm_start():
 # --------------------------------------------------
 # socket server setup
 
-# create a socket server that sends the result of the ultrasonic sensor to the client
+# create a socket server that sends the result of the sensors and motors to the client
 def setup_socket():
     print(Fore.GREEN + "[INFO]: Socket server start." + Fore.WHITE)
     HOST = ''  # Symbolic name meaning all available interfaces
@@ -387,22 +376,28 @@ def setup_socket():
 if __name__ == '__main__':
     print(Fore.CYAN + "[INFO] Initializing..." + Fore.WHITE)
     print("[INFO] Trying to setup PCM...")
-    # setup_pcm()
+    setup_pcm()
     time.sleep(1)
+    
     print(Fore.GREEN + "[INFO] PCM setup OK." + Fore.WHITE)
     print("[INFO] Trying to setup UR sensors...")
-    # setup_left()
+    setup_left()
     time.sleep(1)
+    
     print(Fore.GREEN + "[INFO] Left UR sensor setup OK." + Fore.WHITE)
-    # setup_right()
+    setup_right()
     time.sleep(1)
+    
     print(Fore.GREEN + "[INFO] Right UR sensor setup OK." + Fore.WHITE)
     time.sleep(1)
+    
     print("[INFO] Trying to setup servo...")
-    # setup_servo()
+    setup_servo()
     time.sleep(1)
+    
     print(Fore.GREEN + "[INFO] Servo setup OK." + Fore.WHITE)
     time.sleep(2)
+    
     print(Fore.MAGENTA + "[START] Setup complete, moving on to main loop." + Fore.WHITE)
     time.sleep(2)
 
@@ -424,14 +419,14 @@ if __name__ == '__main__':
 
     except KeyboardInterrupt:
         print("[INFO] Keyboard interrupt detected, exiting.")
-        # GPIO.cleanup()
+        GPIO.cleanup()
         print("[INFO] GPIO cleanup complete.")
         print(Fore.YELLOW + "[INFO] Program exiting." + Fore.WHITE)
         sys.exit()
     except Exception as e:
         print(Fore.RED + "[ERROR] Exception detected, exiting." + Fore.WHITE)
         print("" + str(e))
-       #GPIO.cleanup()
+        GPIO.cleanup()
         print("[INFO] GPIO cleanup complete.")
         print(Fore.YELLOW + "[INFO] Program exiting." + Fore.WHITE)
         sys.exit()
