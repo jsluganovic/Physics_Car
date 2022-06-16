@@ -87,7 +87,8 @@ class fishlog(object):
     def flush(self):
         #this flush method is needed for python 3 compatibility.
         #this handles the flush command by doing nothing.
-        #you might want to specify some extra behavior here.
+        #you might want to specify some extra behavior here. 
+        # ^ Thanks Copilot for the tip :P
         pass
 # create a class that logs the terminal output to a file
 class fishlog(object):
@@ -157,7 +158,7 @@ def servoWrite(angle):      # make the servo rotate to specific angle (0-180 deg
     elif(angle > 180):
         angle = 180
     p.ChangeDutyCycle(map(angle,0,180,SERVO_MIN_DUTY,SERVO_MAX_DUTY))#map the angle to duty cycle and output it
-    
+
     
 def loop_servo():
     while True:
