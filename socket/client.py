@@ -18,9 +18,9 @@ def client():
     print(Fore.GREEN + "[INFO] Connected to server." + Fore.WHITE)
 
     while msg:
-        ur_word_left = b"s UR left     ::  "
+        ur_word_left = b"s UR left      ::  "
         ur_word_right = b"s UR right    ::  "
-        servo_word = b"s servo angle ::  "
+        servo_word = b"s servo angle    ::  "
 
         # print the received data
         if ur_word_left in msg:
