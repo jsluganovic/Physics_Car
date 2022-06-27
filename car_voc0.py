@@ -5,7 +5,7 @@ import sys
 import datetime
 from time import sleep
 from threading import *
-from typing import final
+import time
 
 class Color(object):
     RED = '\033[91m'
@@ -128,7 +128,6 @@ Initializing
 #libs
 from colorama import Fore
 import RPi.GPIO as GPIO
-import time 
 import socket
 import sys
 #----------------------------------------------------------------
@@ -139,7 +138,7 @@ import sys
 OFFSE_DUTY = 0.5        #define pulse offset of servo
 SERVO_MIN_DUTY = 2.5+OFFSE_DUTY     #define pulse duty cycle for minimum angle of servo
 SERVO_MAX_DUTY = 12.5+OFFSE_DUTY    #define pulse duty cycle for maximum angle of servo
-servoPin = 12                       # GPIO18
+servoPin = 12                       # GPIO18 (Can connect servo pin to: 7, 11, 12, 13, 15, 16, 18, 22)
 # !Attention! change 18th pin 
 
 def map(value, fromLow, fromHigh, toLow, toHigh):
@@ -173,7 +172,26 @@ def loop_servo():
             time.sleep(0.001)
         time.sleep(0.5)
 
+#-----------------------------------------------------
+# new servo setup idk 
+def setup_servo2():
+    global servo
+    GPIO.setmode(GPIO.BOARD)
+    GPIO.setup(12, GPIO.OUT)
 
+    servo = GPIO.PWN(11, 50)    # pin 11, 50hz
+    servo.start(0)              # leerlauf
+
+def servo2Write(angle):
+    try: 
+
+        while True:
+            servo.ChangeDutyCycle(2+(angle/18))
+            sleep(0.5)
+            servo.ChangeDutyCycle(0)
+    finally:
+        servo.stop()
+        GPIO.cleanup()
 
 
 # ----------------------------------------------------
@@ -218,9 +236,9 @@ def loop_left():
 
         if int(distance_left) <= 20:
             
-            servoWrite(20) # rotate the servo by 20 degrees 
+            servo2Write(20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(-20) # rotate the servo back to original position 
+            servo2Write(-20) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
             print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
             time.sleep(0.001)
@@ -271,16 +289,16 @@ def loop_right():
         # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_right) <= 20:
-            servoWrite(-20) # rotate the servo by 20 degrees 
+            servo2Write(-20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(20) # rotate the servo back to original position 
+            servo2Write(20) # rotate the servo back to original position 
             #!ATTENTION: check if this works.
             print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
              
         else:
-            print("UR R:: The distance is : %.2f cm"%(distance_right))
-        
-    
+            print("UR R:: The distance is : %.2f cm"%(distance_right))        
+
+
 
 
 
@@ -428,7 +446,7 @@ if __name__ == '__main__':
     try:
         loop_left()
         loop_right()
-        sleep(1)
+        time.sleep(1)
         pcm_start()
         
 
