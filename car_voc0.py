@@ -237,20 +237,24 @@ def setup_left():
     GPIO.setup(echoPin_left, GPIO.IN)    #
 
 def loop_left():
-    distance_left = getSonar_left()
-    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+    def infinite_left():
+        while True:
+            yield
+    for __ in infinite_left():
+        distance_left = getSonar_left()
+        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-    if int(distance_left) <= 20:
-        
-        servoWrite(20) # rotate the servo by 20 degrees 
-        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-        servoWrite(-20) # rotate the servo back to original position 
-        #!ATTENTION: check if this works. 
-        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-        time.sleep(0.1)
+        if int(distance_left) <= 20:
+            
+            servoWrite(20) # rotate the servo by 20 degrees 
+            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(-20) # rotate the servo back to original position 
+            #!ATTENTION: check if this works. 
+            print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+            time.sleep(0.1)
 
-    else:
-        print("UR L:: The distance is : %.2f cm"%(distance_left))
+        else:
+            print("UR L:: The distance is : %.2f cm"%(distance_left))
        
 
 
@@ -290,19 +294,23 @@ def setup_right():
     GPIO.setup(echoPin_right, GPIO.IN)    #
 
 def loop_right():
-    distance_right = getSonar_right()
-    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+    def infinite_right():
+        while True:
+            yield
+    for __ in infinite_right():
+        distance_right = getSonar_right()
+        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-    if int(distance_right) <= 20:
-        servoWrite(-20) # rotate the servo by 20 degrees 
-        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-        servoWrite(20) # rotate the servo back to original position 
-        #!ATTENTION: check if this works.
-        print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
-        sleep(0.1)
-            
-    else:
-        print("UR R:: The distance is : %.2f cm"%(distance_right))        
+        if int(distance_right) <= 20:
+            servoWrite(-20) # rotate the servo by 20 degrees 
+            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(20) # rotate the servo back to original position 
+            #!ATTENTION: check if this works.
+            print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
+            sleep(0.1)
+                
+        else:
+            print("UR R:: The distance is : %.2f cm"%(distance_right))        
 
 
 
@@ -338,19 +346,23 @@ def setup_pwm():
 
 
 def pwm_start():
-        
-    distance_left_pwm = getSonar_left()
-    distance_right_pwm = getSonar_right()
+   def infinite_pwm():
+    while True:
+        yield
+   for __ in infinite_pwm():
 
-    if int(distance_left_pwm) > 20:
-        
-        GPIO.output(Motor1A, GPIO.HIGH)
-        GPIO.output(Motor1B, GPIO.LOW)
-        GPIO.output(Motor1E, GPIO.HIGH)
+        distance_left_pwm = getSonar_left()
+        distance_right_pwm = getSonar_right()
 
-    if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
-        GPIO.output(Motor1E, GPIO.LOW)
-        return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
+        if int(distance_left_pwm) > 20:
+            
+            GPIO.output(Motor1A, GPIO.HIGH)
+            GPIO.output(Motor1B, GPIO.LOW)
+            GPIO.output(Motor1E, GPIO.HIGH)
+
+        if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
+            GPIO.output(Motor1E, GPIO.LOW)
+            return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
             
 
 
@@ -451,11 +463,10 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        while(True):
-            loop_left()
-            loop_right()
-            time.sleep(1)
-            pwm_start()
+        loop_left()
+        loop_right()
+        time.sleep(1)
+        pwm_start()
         
 
 
