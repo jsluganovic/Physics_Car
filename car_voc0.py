@@ -4,8 +4,9 @@ print("Mathew was here.")
 import sys
 import datetime
 from time import sleep
-from threading import *
+import threading
 import time
+from tracemalloc import start
 
 class Color(object):
     RED = '\033[91m'
@@ -237,26 +238,25 @@ def setup_left():
     GPIO.setup(echoPin_left, GPIO.IN)    #
 
 def loop_left():
-    def infinite_left():
-        while True:
-            yield
-    for __ in infinite_left():
-        distance_left = getSonar_left()
-        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-        if int(distance_left) <= 20:
-            
-            servoWrite(20) # rotate the servo by 20 degrees 
-            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(0) # rotate the servo back to original position 
-            #!ATTENTION: check if this works. 
-            print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-            
+    distance_left = getSonar_left()
+    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-        else:
-            print("UR L:: The distance is : %.2f cm"%(distance_left))
-       
+    if int(distance_left) <= 20:
+        
+        servoWrite(20) # rotate the servo by 20 degrees 
+        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+        servoWrite(0) # rotate the servo back to original position 
+        #!ATTENTION: check if this works. 
+        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+        
 
+    else:
+        print("UR L:: The distance is : %.2f cm"%(distance_left))
+
+def start_loop_left():       
+    thread_loopLeft = threading.Thread(target=loop_left)
+    thread_loopLeft.start()
 
 
 
@@ -294,26 +294,25 @@ def setup_right():
     GPIO.setup(echoPin_right, GPIO.IN)    #
 
 def loop_right():
-    def infinite_right():
-        while True:
-            yield
-    for __ in infinite_right():
-        distance_right = getSonar_right()
-        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-        if int(distance_right) <= 20:
-            servoWrite(0) # rotate the servo by 20 degrees 
-            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(20) # rotate the servo back to original position 
-            #!ATTENTION: check if this works.
-            print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
+    distance_right = getSonar_right()
+    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+
+    if int(distance_right) <= 20:
+        servoWrite(0) # rotate the servo by 20 degrees 
+        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+        servoWrite(20) # rotate the servo back to original position 
+        #!ATTENTION: check if this works.
+        print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
+        
             
-                
-        else:
-            print("UR R:: The distance is : %.2f cm"%(distance_right))        
+    else:
+        print("UR R:: The distance is : %.2f cm"%(distance_right))        
 
 
-
+def start_loop_right():
+    thread_loop_right = threading.Thread(target=loop_right)
+    thread_loop_right.start()
 
 
 
@@ -463,8 +462,8 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        loop_left()
-        loop_right()
+        start_loop_left()
+        start_loop_right()
         
         pwm_start()
         
