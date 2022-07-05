@@ -248,10 +248,10 @@ def loop_left():
             
             servoWrite(20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(-20) # rotate the servo back to original position 
+            servoWrite(0) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
             print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-            time.sleep(0.1)
+            
 
         else:
             print("UR L:: The distance is : %.2f cm"%(distance_left))
@@ -302,12 +302,12 @@ def loop_right():
         # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_right) <= 20:
-            servoWrite(-20) # rotate the servo by 20 degrees 
+            servoWrite(0) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
             servoWrite(20) # rotate the servo back to original position 
             #!ATTENTION: check if this works.
             print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
-            sleep(0.1)
+            
                 
         else:
             print("UR R:: The distance is : %.2f cm"%(distance_right))        
@@ -465,7 +465,7 @@ if __name__ == '__main__':
     try:
         loop_left()
         loop_right()
-        time.sleep(1)
+        
         pwm_start()
         
 
