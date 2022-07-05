@@ -179,6 +179,7 @@ def loop_servo():
         time.sleep(0.5)
 
 #-----------------------------------------------------
+"""""
 # new servo setup idk 
 def setup_servo2():
     global servo
@@ -199,7 +200,7 @@ def servo2Write(angle):
         servo.stop()
         GPIO.cleanup()
 
-
+"""""
 # ----------------------------------------------------
 
 # left sensor
@@ -242,9 +243,9 @@ def loop_left():
 
         if int(distance_left) <= 20:
             
-            servo2Write(20) # rotate the servo by 20 degrees 
+            servoWrite(20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servo2Write(-20) # rotate the servo back to original position 
+            servoWrite(-20) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
             print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
             time.sleep(0.001)
@@ -295,9 +296,9 @@ def loop_right():
         # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_right) <= 20:
-            servo2Write(-20) # rotate the servo by 20 degrees 
+            servoWrite(-20) # rotate the servo by 20 degrees 
             time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servo2Write(20) # rotate the servo back to original position 
+            servoWrite(20) # rotate the servo back to original position 
             #!ATTENTION: check if this works.
             print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
              
