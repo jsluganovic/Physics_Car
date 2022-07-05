@@ -1,5 +1,5 @@
-# mateo 
-print("Mateo ist ein Thunfisch.")
+# mateo
+print("Mathew was here.")
 # fishlog init
 import sys
 import datetime
@@ -93,10 +93,16 @@ class fishlog(object):
         # ^ Thanks Copilot for the tip :P
         pass
 # create a class that logs the terminal output to a file
-class fishlog(object):
-    def __init__(self, filename="Default.log"):
-        self.terminal = sys.stdout
+class fishlog_logerr(object):
+    def __init__(self, filename="fishlog.logerr.log"):
+        self.terminal = sys.stderr
         self.log = open(filename, "a")
+         # write the time the file was opened
+        time = datetime.datetime.now()
+        time = time.strftime("%Y-%m-%d %H:%M:%S")
+        time = str(time)
+        sleep(1)
+        self.log.write( "\n"+ f"[{time}] : " + "\n")
 
     def write(self, message):
         self.terminal.write(message)
@@ -188,7 +194,7 @@ def servo2Write(angle):
         while True:
             servo.ChangeDutyCycle(2+(angle/18))
             sleep(0.5)
-            servo.ChangeDutyCycle(0)
+            return servo.ChangeDutyCycle(0)
     finally:
         servo.stop()
         GPIO.cleanup()
@@ -305,11 +311,11 @@ def loop_right():
 
 #----------------------------------------------------------------
 
-# PCM Motor setup 
+# pwm Motor setup 
 
 GPIO.setmode(GPIO.BOARD)
 ###
-# General Info: With the usage of L293D (motor driver chip), turn one side ON, wich turn the motor into one direction (pin A) and vice versa (pin B).
+# General Info: With the usage of L293D (motor driver chip), turn one side ON, which turns the motor into one direction (pin A) and vice versa (pin B).
 # To turn the motor ON, there is a (pin Enable), labelled (pin E). 
 ###
 
@@ -319,11 +325,11 @@ GPIO.setmode(GPIO.BOARD)
 
 Motor1A = 11    # pin 11 (GPIO17)
 Motor1B = 13    # pin 13 (GPIO27)
-Motor1E = 15    # pin 25 (GPIO22)
+Motor1E = 33    # pin 33 (GPIO13)
 
 
-def setup_pcm():
-    print(Fore.GREEN + "[INFO]: PCM Start." + Fore.WHITE)
+def setup_pwm():
+    print(Fore.GREEN + "[INFO]: pwm Start." + Fore.WHITE)
     GPIO.setup(Motor1A, GPIO.OUT)
     GPIO.setup(Motor1B, GPIO.OUT)
     GPIO.setup(Motor1E, GPIO.OUT)
@@ -331,19 +337,19 @@ def setup_pcm():
 # driving forwards
 
 
-def pcm_start():
+def pwm_start():
     while(True):
         
-        distance_left_PCM = getSonar_left()
-        distance_right_PCM = getSonar_right()
+        distance_left_pwm = getSonar_left()
+        distance_right_pwm = getSonar_right()
 
-        if int(distance_left_PCM) > 20:
+        if int(distance_left_pwm) > 20:
             
             GPIO.output(Motor1A, GPIO.HIGH)
             GPIO.output(Motor1B, GPIO.LOW)
             GPIO.output(Motor1E, GPIO.HIGH)
 
-        if int(distance_left_PCM) < 20:
+        if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
             GPIO.output(Motor1E, GPIO.LOW)
             return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
             
@@ -351,6 +357,7 @@ def pcm_start():
 
 # --------------------------------------------------
 # # socket server setup
+
 # def infinite():
 #     while True:
 #         yield
@@ -404,7 +411,7 @@ def pcm_start():
 
 if __name__ == '__main__':
     
-    print(Fore.GREEN + "[INFO] PCM setup OK." + Fore.WHITE)
+    print(Fore.GREEN + "[INFO] pwm setup OK." + Fore.WHITE)
     print("[INFO] Trying to setup UR sensors...")
     setup_left()
     time.sleep(1)
@@ -417,8 +424,8 @@ if __name__ == '__main__':
     time.sleep(1)
 
     print(Fore.CYAN + "[INFO] Initializing..." + Fore.WHITE)
-    print("[INFO] Trying to setup PCM...")
-    setup_pcm()
+    print("[INFO] Trying to setup pwm...")
+    setup_pwm()
     time.sleep(1)
     
     print("[INFO] Trying to setup servo...")
@@ -441,13 +448,14 @@ if __name__ == '__main__':
     # fishlog initialization
     print(Fore.MAGENTA + "[INFO] Initializing fishlog..." + Fore.WHITE)
     sys.stdout = fishlog("fishlog_car.log")
+    sys.stderr = fishlog_logerr("fishlog_car_err.log")
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
         loop_left()
         loop_right()
         time.sleep(1)
-        pcm_start()
+        pwm_start()
         
 
 

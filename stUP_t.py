@@ -30,7 +30,7 @@ class Color(object):
 
 
 if __name__ == '__main__':
-    print("""
+    print(Color.GREEN_RAINBOW + """
         
    ___              __       ___                       
  /'___\ __         /\ \     /\_ \                               
@@ -41,18 +41,19 @@ if __name__ == '__main__':
    \/_/   \/_/\/___/   \/_/\/_/\/____/\/___/  \/___L\ :
                                                 /\____/
                                                 \_/__/ v. 2.0 by @Skipper_
-        """)
+        """ + Color.END)
         
 
 
-    print("""
+    print(Color.CYAN_BOLD + """
                     /`·.¸
                     /¸...¸`:·
                 ¸.·´  ¸   `·.¸.·´)
                 : © ):´;      ¸  {
                 `·.¸ `·  ¸.·´\`·¸)
                     `\\´´\¸.·´
-        """)
+
+""" + Color.END)
     sleep(1)
     print( """
 [INFO] Fishlog initialized.\n""" )
