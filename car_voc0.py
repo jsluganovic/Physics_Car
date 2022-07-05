@@ -6,7 +6,7 @@ import datetime
 from time import sleep
 import threading
 import time
-from tracemalloc import start
+from multiprocessing import Process
 
 class Color(object):
     RED = '\033[91m'
@@ -255,8 +255,8 @@ def loop_left():
             print("UR L:: The distance is : %.2f cm"%(distance_left))
 
 def start_loop_left():       
-    thread_loopLeft = threading.Thread(target=loop_left)
-    thread_loopLeft.start()
+    proc_loopLeft = Process(target=loop_left)
+    proc_loopLeft.start()
 
 
 
@@ -311,8 +311,8 @@ def loop_right():
 
 
 def start_loop_right():
-    thread_loop_right = threading.Thread(target=loop_right)
-    thread_loop_right.start()
+    proc_loop_right = Process(target=loop_right)
+    proc_loop_right.start()
 
 
 
@@ -345,11 +345,7 @@ def setup_pwm():
 
 
 def pwm_start():
-   def infinite_pwm():
-    while True:
-        yield
-   for __ in infinite_pwm():
-
+    while(True):
         distance_left_pwm = getSonar_left()
         distance_right_pwm = getSonar_right()
 
