@@ -359,13 +359,6 @@ def pwm_start():
  #           return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
             
 
-# loop all 
-
-def loop_shit():
-    while(True):
-        pwm_start()
-        loop_left()
-        loop_right()
 
 # --------------------------------------------------
 # # socket server setup
@@ -464,7 +457,9 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        loop_shit()
+        loop_left()
+        loop_right()
+        pwm_start()
 
         
         
