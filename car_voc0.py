@@ -238,21 +238,21 @@ def setup_left():
     GPIO.setup(echoPin_left, GPIO.IN)    #
 
 def loop_left():
+    while(True):
+        distance_left = getSonar_left()
+        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-    distance_left = getSonar_left()
-    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+        if int(distance_left) <= 20:
+            
+            servoWrite(5) # rotate the servo by 20 degrees 
+           # time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(0) # rotate the servo back to original position 
+            #!ATTENTION: check if this works. 
+            print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+            
 
-    if int(distance_left) <= 20:
-        
-        servoWrite(20) # rotate the servo by 20 degrees 
-        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-        servoWrite(0) # rotate the servo back to original position 
-        #!ATTENTION: check if this works. 
-        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-        
-
-    else:
-        print("UR L:: The distance is : %.2f cm"%(distance_left))
+        else:
+            print("UR L:: The distance is : %.2f cm"%(distance_left))
 
 def thread_loop_left():
     # create a thread to run the loop_left function
@@ -299,8 +299,8 @@ def loop_right():
 
         if int(distance_right) <= 20:
             servoWrite(0) # rotate the servo by 20 degrees 
-            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(20) # rotate the servo back to original position 
+            #time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(5) # rotate the servo back to original position 
             #!ATTENTION: check if this works.
             print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
             
