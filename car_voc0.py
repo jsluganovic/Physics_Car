@@ -254,11 +254,10 @@ def loop_left():
     else:
         print("UR L:: The distance is : %.2f cm"%(distance_left))
 
-def start_loop_left():       
-    proc_loopLeft = Process(target=loop_left)
-    proc_loopLeft.start()
-
-
+def thread_loop_left():
+    # create a thread to run the loop_left function
+    t1 = threading.Thread(target=loop_left)
+    t1.start()
 
 # right sensor
 
@@ -294,28 +293,26 @@ def setup_right():
     GPIO.setup(echoPin_right, GPIO.IN)    #
 
 def loop_right():
-    
-    distance_right = getSonar_right()
-    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+    while(True):
+        distance_right = getSonar_right()
+        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-    if int(distance_right) <= 20:
-        servoWrite(0) # rotate the servo by 20 degrees 
-        time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-        servoWrite(20) # rotate the servo back to original position 
-        #!ATTENTION: check if this works.
-        print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
-        
+        if int(distance_right) <= 20:
+            servoWrite(0) # rotate the servo by 20 degrees 
+            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
+            servoWrite(20) # rotate the servo back to original position 
+            #!ATTENTION: check if this works.
+            print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
             
-    else:
-        print("UR R:: The distance is : %.2f cm"%(distance_right))        
+                
+        else:
+            print("UR R:: The distance is : %.2f cm"%(distance_right))        
 
 
-def start_loop_right():
-    proc_loop_right = Process(target=loop_right)
-    proc_loop_right.start()
-
-
-
+def thread_loop_right():
+    # create a thread to run the loop_right function
+    t2 = threading.Thread(target=loop_right)
+    t2.start()
 #----------------------------------------------------------------
 
 # pwm Motor setup 
@@ -345,18 +342,19 @@ def setup_pwm():
 
 
 def pwm_start():
-    distance_left_pwm = getSonar_left()
-    distance_right_pwm = getSonar_right()
+    while(True):
+        distance_left_pwm = getSonar_left()
+        distance_right_pwm = getSonar_right()
 
-    if int(distance_left_pwm) > 20:
-        
-        GPIO.output(Motor1A, GPIO.HIGH)
-        GPIO.output(Motor1B, GPIO.LOW)
-        GPIO.output(Motor1E, GPIO.HIGH)
+        if int(distance_left_pwm) > 20:
+            
+            GPIO.output(Motor1A, GPIO.HIGH)
+            GPIO.output(Motor1B, GPIO.LOW)
+            GPIO.output(Motor1E, GPIO.HIGH)
 
- #       if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
- #           GPIO.output(Motor1E, GPIO.LOW)
- #           return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
+    #       if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
+    #           GPIO.output(Motor1E, GPIO.LOW)
+    #           return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
             
 
 
@@ -457,8 +455,8 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        loop_left()
-        loop_right()
+        thread_loop_left()
+        thread_loop_right()
         pwm_start()
 
         
