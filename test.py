@@ -42,13 +42,11 @@ def loop_left():
         if int(distance_left) <= 20:
             
             # servoWrite(20) # rotate the servo by 20 degrees 
-            time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
             #servoWrite(-20) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
             print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
         else:
             print("UR L:: The distance is : %.2f cm"%(distance_left))
-        time.sleep(1) # maybe dont need this ():P
 
 if __name__ == "__main__":
     setup_left()
