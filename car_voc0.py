@@ -238,18 +238,18 @@ def setup_left():
     GPIO.setup(echoPin_left, GPIO.IN)    #
 
 def loop_left():
-    while(True):
-        distance_left = getSonar_left()
-        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
-        if int(distance_left) <= 20:
-            
-            # servoWrite(20) # rotate the servo by 20 degrees 
-            #servoWrite(-20) # rotate the servo back to original position 
-            #!ATTENTION: check if this works. 
-            print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-        else:
-            print("UR L:: The distance is : %.2f cm"%(distance_left))
+    distance_left = getSonar_left()
+    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+
+    if int(distance_left) <= 20:
+        
+        # servoWrite(20) # rotate the servo by 20 degrees 
+        #servoWrite(-20) # rotate the servo back to original position 
+        #!ATTENTION: check if this works. 
+        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+    else:
+        print("UR L:: The distance is : %.2f cm"%(distance_left))
 
 def thread_loop_left():
     # create a thread to run the loop_left function
@@ -290,7 +290,6 @@ def setup_right():
     GPIO.setup(echoPin_right, GPIO.IN)    #
 
 def loop_right():
-    while(True):
         distance_right = getSonar_right()
         # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
@@ -312,6 +311,11 @@ def thread_loop_right():
     t2.start()
 #----------------------------------------------------------------
 
+# loop all
+def loop_all():
+    while(True):
+        loop_left()
+        loop_right()
 # pwm Motor setup 
 
 GPIO.setmode(GPIO.BOARD)
@@ -471,5 +475,3 @@ if __name__ == '__main__':
         print("[INFO] GPIO cleanup complete.")
         print(Fore.YELLOW + "[INFO] Program exiting." + Fore.WHITE)
         sys.exit()
-    finally:
-        loop_right()
