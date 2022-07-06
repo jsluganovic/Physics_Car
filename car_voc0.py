@@ -456,8 +456,7 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        loop_left()
-
+        loop_all()
 
 
     except KeyboardInterrupt:
