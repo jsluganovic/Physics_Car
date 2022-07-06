@@ -244,13 +244,10 @@ def loop_left():
 
         if int(distance_left) <= 20:
             
-            servoWrite(5) # rotate the servo by 20 degrees 
-           # time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
-            servoWrite(0) # rotate the servo back to original position 
+            # servoWrite(20) # rotate the servo by 20 degrees 
+            #servoWrite(-20) # rotate the servo back to original position 
             #!ATTENTION: check if this works. 
             print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
-            
-
         else:
             print("UR L:: The distance is : %.2f cm"%(distance_left))
 
@@ -455,13 +452,8 @@ if __name__ == '__main__':
     print(Fore.GREEN + "[INFO] Fishlog initialized." + Fore.WHITE)
     print("[INFO] Starting main loop.")
     try:
-        thread_loop_left()
-        thread_loop_right()
-        pwm_start()
+        loop_left()
 
-        
-        
-        
 
 
     except KeyboardInterrupt:
@@ -479,3 +471,5 @@ if __name__ == '__main__':
         print("[INFO] GPIO cleanup complete.")
         print(Fore.YELLOW + "[INFO] Program exiting." + Fore.WHITE)
         sys.exit()
+    finally:
+        loop_right()
