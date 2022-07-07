@@ -1,0 +1,180 @@
+
+[2022-07-05 18:20:37] : 
+
+[2022-07-05 18:36:09] : 
+
+[2022-07-05 18:37:17] : 
+
+[2022-07-05 18:56:25] : 
+
+[2022-07-05 19:04:06] : 
+
+[2022-07-05 19:08:38] : 
+
+[2022-07-05 19:12:05] : 
+
+[2022-07-05 19:16:55] : 
+
+[2022-07-05 19:18:58] : 
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 242, in loop_left
+    distance_left = getSonar_left()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 227, in getSonar_left
+    GPIO.output(trigPin_left,GPIO.HIGH)      #make trigPin send 10us high level 
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 298, in loop_right
+    distance_right = getSonar_right()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 283, in getSonar_right
+    GPIO.output(trigPin_right,GPIO.HIGH)      #make trigPin send 10us high level 
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+
+[2022-07-05 19:28:59] : 
+
+[2022-07-05 19:31:46] : 
+
+[2022-07-06 15:42:28] : 
+
+[2022-07-06 15:48:55] : 
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 297, in loop_right
+    distance_right = getSonar_right()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 285, in getSonar_right
+    pingTime_right = pulseIn_right(echoPin_right,GPIO.HIGH,timeOut_right)   #read plus time of echoPin
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 275, in pulseIn_right
+    while(GPIO.input(pin_right) == level_right):
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+
+[2022-07-06 15:49:22] : 
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 297, in loop_right
+    distance_right = getSonar_right()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 282, in getSonar_right
+    GPIO.output(trigPin_right,GPIO.HIGH)      #make trigPin send 10us high level 
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+
+[2022-07-06 15:51:11] : 
+Exception in thread Thread-2Exception in thread Thread-1:
+:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+  File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self.run()
+  File "/usr/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 297, in loop_right
+    distance_right = getSonar_right()    self._target(*self._args, **self._kwargs)
+
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 284, in getSonar_right
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 242, in loop_left
+    GPIO.output(trigPin_right,GPIO.LOW)
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)    distance_left = getSonar_left()
+
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 230, in getSonar_left
+    pingTime_left = pulseIn_left(echoPin_left,GPIO.HIGH,timeOut_left)   #read plus time of echoPin
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 220, in pulseIn_left
+    while(GPIO.input(pin_left) == level_left):
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+
+[2022-07-06 15:57:18] : 
+Traceback (most recent call last):
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 455, in <module>
+    loop_left()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 242, in loop_left
+    distance_left = getSonar_left()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 230, in getSonar_left
+    pingTime_left = pulseIn_left(echoPin_left,GPIO.HIGH,timeOut_left)   #read plus time of echoPin
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 221, in pulseIn_left
+    if((time.time() - t0_left) > timeOut_left*0.000001):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 465, in <module>
+    sys.exit()
+SystemExit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 475, in <module>
+    loop_right()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 294, in loop_right
+    distance_right = getSonar_right()
+  File "/home/angel/Desktop/final/Physics_Car/car_voc0.py", line 279, in getSonar_right
+    GPIO.output(trigPin_right,GPIO.HIGH)      #make trigPin send 10us high level 
+RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+
+[2022-07-06 16:01:39] : 
+
+[2022-07-06 16:02:24] : 
+
+[2022-07-06 16:02:53] : 
+
+[2022-07-06 16:09:17] : 
+
+[2022-07-06 16:09:50] : 
+
+[2022-07-06 16:24:55] : 
+
+[2022-07-06 16:52:28] : 
+
+[2022-07-06 17:02:00] : 
+
+[2022-07-06 17:05:09] : 
+
+[2022-07-06 17:06:28] : 
+
+[2022-07-06 17:07:06] : 
+
+[2022-07-06 17:10:45] : 
+
+[2022-07-06 17:11:59] : 
+
+[2022-07-06 17:28:55] : 
+
+[2022-07-06 17:29:22] : 
+
+[2022-07-06 17:30:30] : 
+
+[2022-07-06 17:32:44] : 
+
+[2022-07-06 17:33:53] : 
+
+[2022-07-06 17:34:33] : 
+
+[2022-07-06 17:35:47] : 
+
+[2022-07-06 17:41:27] : 
+
+[2022-07-06 17:43:55] : 
+
+[2022-07-06 19:26:44] : 
+
+[2022-07-06 19:34:29] : 
+
+[2022-07-06 19:35:13] : 

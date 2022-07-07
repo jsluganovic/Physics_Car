@@ -7,6 +7,8 @@ from time import sleep
 import threading
 import time
 from multiprocessing import Process
+import statistics
+import serial
 
 class Color(object):
     RED = '\033[91m'
@@ -203,7 +205,6 @@ def servo2Write(angle):
 
 """""
 # ----------------------------------------------------
-
 # left sensor
 
 trigPin_left = 16
@@ -237,14 +238,25 @@ def setup_left():
     GPIO.setup(trigPin_left, GPIO.OUT)   #
     GPIO.setup(echoPin_left, GPIO.IN)    #
 
+# create a array of distance_left with the last 10 numbers
+array_left_UR = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
+
+
 def loop_left():
 
-    distance_left = getSonar_left()
-    # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+
+    newValue_left = getSonar_left()
+
+    array_left_UR.pop()
+    array_left_UR.insert(0, newValue_left)
+
+    distance_left = statistics.mean(array_left_UR)
 
     if int(distance_left) <= 20:
         
         servoWrite(0) # rotate the servo by 20 degrees 
+        sleep(0.5)
+        servoWrite(90)
         #servoWrite(-20) # rotate the servo back to original position 
         #!ATTENTION: check if this works. 
         print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
@@ -289,13 +301,24 @@ def setup_right():
     GPIO.setup(trigPin_right, GPIO.OUT)   #
     GPIO.setup(echoPin_right, GPIO.IN)    #
 
+
+array_right_UR = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
+
+
 def loop_right():
-        distance_right = getSonar_right()
-        # print ("UR L:: The distance is : %.2f cm"%(distance_left))
+        newValue_right = getSonar_right()
+
+        array_right_UR.pop()
+        array_right_UR.insert(0, newValue_right)
+
+        distance_right = statistics.mean(array_right_UR)
+            # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_right) <= 20:
             print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
-            servoWrite(90) # rotate the servo by 20 degrees 
+            servoWrite(180) # rotate the servo by 20 degrees
+            sleep(0.5)
+            servoWrite(90)
             #time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
             #!ATTENTION: check if this works.
             
@@ -311,11 +334,7 @@ def thread_loop_right():
     t2.start()
 #----------------------------------------------------------------
 
-# loop all
-def loop_all():
-    while(True):
-        loop_left()
-        loop_right()
+
 # pwm Motor setup 
 
 GPIO.setmode(GPIO.BOARD)
@@ -323,42 +342,55 @@ GPIO.setmode(GPIO.BOARD)
 # General Info: With the usage of L293D (motor driver chip), turn one side ON, which turns the motor into one direction (pin A) and vice versa (pin B).
 # To turn the motor ON, there is a (pin Enable), labelled (pin E). 
 ###
-
-# Motor1A = 16    # pin 16 (GPIO23)
-# Motor1B = 18    # pin 18 (GPIO24)
-# Motor1E = 22    # pin 22 (GPIO11)
-
-Motor1A = 11    # pin 11 (GPIO17)
-Motor1B = 13    # pin 13 (GPIO27)
-Motor1E = 33    # pin 33 (GPIO13)
-
+ser = serial.Serial(
+        port='/dev/ttyUSB0', #Replace ttyS0 with ttyAM0 for Pi1,Pi2,Pi0
+        baudrate = 9600,
+        parity=serial.PARITY_NONE,
+        stopbits=serial.STOPBITS_ONE,
+        bytesize=serial.EIGHTBITS
+)
 
 def setup_pwm():
     print(Fore.GREEN + "[INFO]: pwm Start." + Fore.WHITE)
-    GPIO.setup(Motor1A, GPIO.OUT)
-    GPIO.setup(Motor1B, GPIO.OUT)
-    GPIO.setup(Motor1E, GPIO.OUT)
+
 
 # driving forwards
 
+array_left_pwm = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
+array_right_pwm = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
 
 def pwm_start():
+        
+    newValue_left_pwm = getSonar_left()
+    newValue_right_pwm = getSonar_right()
+
+    array_left_pwm.pop()
+    array_left_pwm.insert(0, newValue_left_pwm)
+
+    distance_left_pwm = statistics.mean(array_left_pwm)
+
+    array_right_pwm.pop()
+    array_right_pwm.insert(0, newValue_right_pwm)
+
+    distance_right_pwm = statistics.mean(array_left_pwm)
+
+        
+
+
+    if int(distance_left_pwm) <= 20 and int(distance_right_pwm) <= 20:
+        print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
+        ser.write(bytes("s", "utf-8"))
+        sys.exit()
+    else:
+        ser.write(bytes("f", "utf-8"))
+            
+
+# loop all
+def loop_all():
     while(True):
-        distance_left_pwm = getSonar_left()
-        distance_right_pwm = getSonar_right()
-
-        if int(distance_left_pwm) > 20:
-            
-            GPIO.output(Motor1A, GPIO.HIGH)
-            GPIO.output(Motor1B, GPIO.LOW)
-            GPIO.output(Motor1E, GPIO.HIGH)
-
-    #       if int(distance_right_pwm) < 20 and int(distance_right_pwm) < 20:
-    #           GPIO.output(Motor1E, GPIO.LOW)
-    #           return print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
-            
-
-
+        loop_left()
+        loop_right()
+        pwm_start()
 # --------------------------------------------------
 # # socket server setup
 
@@ -411,8 +443,7 @@ def pwm_start():
 # --------------------------------------------------
 
 # --------------------------------------------------
-# main 
-
+# main                                         ........................
 if __name__ == '__main__':
     
     print(Fore.GREEN + "[INFO] pwm setup OK." + Fore.WHITE)
@@ -457,6 +488,7 @@ if __name__ == '__main__':
     print("[INFO] Starting main loop.")
     try:
         loop_all()
+    
 
 
     except KeyboardInterrupt:
