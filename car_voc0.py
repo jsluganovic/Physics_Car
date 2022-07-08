@@ -176,7 +176,7 @@ def servoWriteWbackPulse(angle):
     elif(angle > 180):
         angle = 180
     p.ChangeDutyCycle(map(angle,0,180,SERVO_MIN_DUTY,SERVO_MAX_DUTY))#map the angle to duty cycle and output it
-    sleep(0.01)
+    sleep(0.1)
     if angle == 0:
         servoWrite(70)
     elif angle == 180:
@@ -375,13 +375,13 @@ def pwm_start():
     array_right_pwm.pop()
     array_right_pwm.insert(0, newValue_right_pwm)
 
-    distance_right_pwm = statistics.mean(array_left_pwm)
+    distance_right_pwm = statistics.mean(array_right_pwm)
 
         
 
 
-    if int(distance_left_pwm) <= 20  and int(distance_right_pwm) <= 20:
-        print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
+    if int(distance_left_pwm) <= 20 and int(distance_right_pwm) <= 20:
+        print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE + str(distance_left_pwm) + ".." + str(distance_right_pwm))
         ser.write(
             bytes("s", "utf-8"))
         sys.exit()
@@ -393,7 +393,6 @@ def pwm_start():
 def loop_all():
     while(True):
         loop_left()
-
         loop_right()
         pwm_start()
 # --------------------------------------------------
