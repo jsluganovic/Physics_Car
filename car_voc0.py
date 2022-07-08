@@ -170,6 +170,18 @@ def servoWrite(angle):      # make the servo rotate to specific angle (0-180 deg
     p.ChangeDutyCycle(map(angle,0,180,SERVO_MIN_DUTY,SERVO_MAX_DUTY))#map the angle to duty cycle and output it
 
     
+def servoWriteWbackPulse(angle):
+    if(angle<0):
+        angle = 0
+    elif(angle > 180):
+        angle = 180
+    p.ChangeDutyCycle(map(angle,0,180,SERVO_MIN_DUTY,SERVO_MAX_DUTY))#map the angle to duty cycle and output it
+    sleep(0.01)
+    if angle == 0:
+        servoWrite(70)
+    elif angle == 180:
+        servoWrite(70)
+
 def loop_servo():
     while True:
         for dc in range(0, 181, 1):   #make servo rotate from 0 to 180 deg
@@ -205,6 +217,7 @@ def servo2Write(angle):
 
 """""
 # ----------------------------------------------------
+# left infrared sensor
 # left sensor
 
 trigPin_left = 16
@@ -244,7 +257,6 @@ array_left_UR = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
 
 def loop_left():
 
-
     newValue_left = getSonar_left()
 
     array_left_UR.pop()
@@ -252,21 +264,18 @@ def loop_left():
 
     distance_left = statistics.mean(array_left_UR)
 
+
     if int(distance_left) <= 20:
         
-        servoWrite(0) # rotate the servo by 20 degrees 
-        sleep(0.5)
-        servoWrite(90)
+        servoWriteWbackPulse(0) # rotate the servo by 20 degrees 
+        #servoWrite(90)
         #servoWrite(-20) # rotate the servo back to original position 
         #!ATTENTION: check if this works. 
-        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE)
+        print(Fore.BLUE + "Object detected LEFT, turning RIGHT." + Fore.WHITE + str(distance_left))
+        
+
     else:
         print("UR L:: The distance is : %.2f cm"%(distance_left))
-
-def thread_loop_left():
-    # create a thread to run the loop_left function
-    t1 = threading.Thread(target=loop_left)
-    t1.start()
 
 # right sensor
 
@@ -306,6 +315,7 @@ array_right_UR = [500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
 
 
 def loop_right():
+
         newValue_right = getSonar_right()
 
         array_right_UR.pop()
@@ -315,23 +325,16 @@ def loop_right():
             # print ("UR L:: The distance is : %.2f cm"%(distance_left))
 
         if int(distance_right) <= 20:
-            print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE)
-            servoWrite(180) # rotate the servo by 20 degrees
-            sleep(0.5)
-            servoWrite(90)
+            servoWriteWbackPulse(180) # rotate the servo by 20 degrees
+            print(Fore.BLUE + "Object detected RIGHT, turning LEFT." + Fore.WHITE + str(distance_right))
+
             #time.sleep(1) # wait for one second, then rotate servo back to 0 degrees
             #!ATTENTION: check if this works.
-            
-            
+           
                 
         else:
-            print("UR R:: The distance is : %.2f cm"%(distance_right))        
+            print("UR R:: The distance is : %.2f cm"%(distance_right))
 
-
-def thread_loop_right():
-    # create a thread to run the loop_right function
-    t2 = threading.Thread(target=loop_right)
-    t2.start()
 #----------------------------------------------------------------
 
 
@@ -377,9 +380,10 @@ def pwm_start():
         
 
 
-    if int(distance_left_pwm) <= 20 and int(distance_right_pwm) <= 20:
+    if int(distance_left_pwm) <= 20  and int(distance_right_pwm) <= 20:
         print(Fore.RED + "Stopping motor, both sensors activated." + Fore.WHITE)
-        ser.write(bytes("s", "utf-8"))
+        ser.write(
+            bytes("s", "utf-8"))
         sys.exit()
     else:
         ser.write(bytes("f", "utf-8"))
@@ -389,6 +393,7 @@ def pwm_start():
 def loop_all():
     while(True):
         loop_left()
+
         loop_right()
         pwm_start()
 # --------------------------------------------------
